@@ -6,7 +6,7 @@ import { FaTimesCircle } from 'react-icons/fa';
 
 const REGISTER_URL ='/signup'
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
+const PWD_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 const Number_REGEX = /^(\+234|234|0)(701|702|703|704|705|706|707|708|709|802|803|804|805|806|807|808|809|810|811|812|813|814|815|816|817|818|819|909|908|901|902|903|904|905|906|907|919|918|911|912|913|914|915|916|917)([0-9]{7})$/
 
 
@@ -104,7 +104,6 @@ const Register = () => {
         console.log("Error object:", err);
      }
     }
-  
   return (
     <div>
     {
@@ -142,6 +141,7 @@ const Register = () => {
                 </label> 
                 <input type="text"
                   id="username"
+                  required
                   ref={userRef}
                   autoComplete='off' 
                   onChange={(e)=> setUsername(e.target.value)}
@@ -194,6 +194,7 @@ const Register = () => {
               <FaTimesCircle className={validPassword || !password ? "hide" : "invalid"}/>
               </label>
               <input type="text" id="Password"
+              required
               aria-invalid={validPassword ? "false":"true"}
              aria-describedby='passwordnote'
              onFocus={()=>setPassFocus(true)}
@@ -236,14 +237,9 @@ const Register = () => {
               </div>
             </div>
             <Link to ='/User/Login' className="fgt">Already have an account?</Link>
-            <button className='btnlogs' disabled={!validusername || !validPassword || !validphoneNumber || !validConfirmPassword ? true : false}>
+            <button className={!validusername || !validPassword || !validphoneNumber || !validConfirmPassword ?  "btnlog": "btnlogs"}>
             Sign in</button>
             </form>
-{/*             <div style={{display:'flex',justifyContent:'center', alignItems:'center',width:"95%"}}>
-              <div className="lin"></div>
-              <div className="lis" style={{margin:"0px 5px"}}>or</div>
-              <div className="lin"></div>
-          </div> */}
         </div>
         </div>
       <Outlet/>
