@@ -25,7 +25,7 @@ const Navbar = ({scrollToSection,hero, details,donated}) => {
           <li className="linkuse"  onClick={() => scrollToSection(details)}>About</li>
           {/*<li href="/" >How to Play</li>*/}
           <li onClick={() => scrollToSection(donated)}>Donate</li>
-          <Link to ="/User" className='linkTag'><a className='linkTag' style={{color:"#16956C"}} href="https://chat.whatsapp.com/Ed1itTGl97QIuoHdMQmlJT">Play</a></Link>
+          <Link to ="/User" className='linkTag'><a className='linkTag' style={{color:"#16956C",fontWeight:"bold"}} href="https://chat.whatsapp.com/Ed1itTGl97QIuoHdMQmlJT">Play</a></Link>
         </div>
       </div>
     </nav>
