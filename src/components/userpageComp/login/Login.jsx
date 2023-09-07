@@ -1,26 +1,8 @@
-import React, { useState } from 'react'
-import { Link, NavLink, Navigate, Outlet } from 'react-router-dom'
+import React from 'react'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import './login.css'
-import axios from 'axios';
 
 const Login = () => {
-  const [ username, setUsername] = useState('');
-  const [ password, setPassword] = useState('');
-  const [navigate, setNavigate] = useState(false)
-  const submit = async e => {
-    e.preventDefault();
-
-    await axios.post("https://lime-clever-peacock.cyclic.app/api/v1/users/login",{
-      username,
-      password,
-    })
-    .then((res)=>localStorage.setItem("token", res.data.token))
-      .catch((err) => console.error(err));
-    setNavigate(true)
-  }
-  if (navigate){
-    return <Navigate to="/Dashboard"/>
-  }
   return (
     <div className='loginContainer'>
         <div className='loginDet'> 
@@ -45,7 +27,7 @@ const Login = () => {
                 >Sign Up</NavLink>
               </div>
             </div>
-            <form action="" onSubmit={submit} className='formks'>
+            <form action=""  className='formks'>
               <div className="formk">
                 <div className='box'>
                   <label htmlFor="Username" style={{display:'flex'}}>Username:
@@ -71,7 +53,6 @@ const Login = () => {
       </div>
       <Outlet/>
     </div>
-
   )
 }
 
