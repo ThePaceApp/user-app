@@ -15,7 +15,7 @@ nav.sticky{
     align-items: center;
     justify-content: space-between;
     justify-items: center;
-    padding: 2rem 2rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     border-bottom:1px solid #30E0A8;
 }
 .navIcon{
@@ -33,7 +33,7 @@ nav.sticky{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-top: -11px;
+    margin-top: -20px;
 }
 .navLinks li{
     color: #fff;
