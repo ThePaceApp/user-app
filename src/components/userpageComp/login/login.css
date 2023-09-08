@@ -79,7 +79,8 @@
 }
 
 .errmsg {
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
     background-color: lightpink;
     color: firebrick;
     font-weight: bold;
