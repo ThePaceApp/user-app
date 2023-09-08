@@ -9,7 +9,7 @@ const Login = () => {
           <div className="loginform">
             <div className="loglinks">
               <div>
-                <h1 style={{color:"#16955C"}} className="logText">Welcome.</h1>
+                <h1 style={{color:"#16955C"}} className="nins">Welcome.</h1>
               </div>
               <div className="loglink">
                 <NavLink to ='/User/Login'
