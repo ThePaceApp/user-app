@@ -227,6 +227,10 @@ label{
        gap: 20px;
        margin-left: 0px;
     }
+    .logText{
+        font-size: 15px;
+        margin-left: 10px;
+    }
     .loglink{
         width: 100%;
         display: flex;

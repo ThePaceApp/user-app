@@ -135,7 +135,7 @@ const Register = () => {
           <form className="formks" onSubmit={handleSubmit} >
           <div className="formk">
               <div className='box'>
-                <label htmlFor="Username" style={{display:'flex'}}>Username:
+                <label htmlFor="Username" style={{display:'flex'}} className="logText">Username:
                 <BiCheckCircle className={validusername ? "valid" : "hide"}/> 
                 <FaTimesCircle className={validusername || !username ? "hide" : "invalid"}/>
                 </label> 
