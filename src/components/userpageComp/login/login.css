@@ -20,9 +20,12 @@
     align-items: center;
     justify-content: center;
 }
+.sms img{
+    width:150px;
+}
 .sms .log{
     color: #fff;
-    font-size: 30px;
+    font-size: 4rem;
 }
 .loginDet{
     flex: 1;
