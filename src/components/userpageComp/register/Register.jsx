@@ -97,7 +97,10 @@ const Register = () => {
             setErrMsg('Server Error');
         } else if (err.response.status === 409) {
             setErrMsg('Username already exist');
-        } else {
+        } else if(err.response.status === 400){
+          setErrMsg('Phone Number taken')
+        }
+        else {
             setErrMsg('Registration Failed')
         }
         errRef.current.focus();
