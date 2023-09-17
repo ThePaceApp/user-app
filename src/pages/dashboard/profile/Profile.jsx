@@ -72,7 +72,7 @@ const Profile = () => {
                 />
               <div className='profileform'>
                 <div style={{display:"flex", flexDirection:"column"}}>
-                <label style={{fontWeight:'200'}}>Full name </label>
+                <label style={{fontWeight:'200'}}>Enter your full name </label>
                 <input type='name' placeholder='full name'
                  values={values.name}
                  onChange={handleInputChange}
@@ -80,7 +80,7 @@ const Profile = () => {
                 </div>
                 <div style={{display:"flex", flexDirection:"column"}}>
                 <label style={{fontWeight:'200'}}>E-mail </label>
-                <input type='Email' placeholder='full name' values={values.Email}/>
+                <input type='Email' placeholder='paceapp@gmail.com' values={values.Email}/>
                 </div>
                 <div style={{display:"flex", flexDirection:"column"}}>
                 <label style={{fontWeight:'200'}}>Gender</label>
