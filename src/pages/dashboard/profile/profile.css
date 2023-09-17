@@ -54,6 +54,11 @@
     outline: none;
     border-bottom: 1px solid #16955C;
 }
+.profiletxt{
+    font-size: 2.5rem;
+    color:#16955C;
+    font-weight:800;
+}
 @media screen and (max-width:540px){
     .profileside{
         display: none;
@@ -61,4 +66,10 @@
     .profileimage{
         width: 30%;
     }
+}
+@media screen and (max-width:280px){
+    .profiletxt{
+        font-size: 1.9rem;
+        margin-left: -10px;
+    }  
 }

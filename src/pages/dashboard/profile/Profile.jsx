@@ -55,7 +55,7 @@ const Profile = () => {
         <div className='profiledetails'>
           <div className='profilehead'>
             <div style={{display:'flex',justifyContent:"space-between",alignItems:"center"}}>
-              <h3 style={{fontSize:"2.5rem",color:"#16956C",fontWeight:"800"}}>Complete Profile</h3>
+              <h3 className='profiletxt'>Complete Profile</h3>
               <p >1/3</p>
             </div>
             <div style={{display:"flex", alignItems:'center',gap:'5px',marginTop:'5px'}}>
@@ -72,8 +72,8 @@ const Profile = () => {
                 />
               <div className='profileform'>
                 <div style={{display:"flex", flexDirection:"column"}}>
-                <label style={{fontWeight:'200'}}>Enter your full name </label>
-                <input type='name' placeholder='full name'
+                <label style={{fontWeight:'200'}}>Full name </label>
+                <input type='name' placeholder='Enter your full name'
                  values={values.name}
                  onChange={handleInputChange}
                  />
