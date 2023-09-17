@@ -112,7 +112,7 @@ const Login = () => {
                 </div> 
                 </div> 
                 <Link to ='/User/ResetPassword' className="fgt">Forget password?</Link>
-                <button className='btnlogs'>Sign in</button>
+                <button className={!username || !password?  "btnlog": "btnlogs"}>Sign in</button>
             </form>
         </div>
       </div>
