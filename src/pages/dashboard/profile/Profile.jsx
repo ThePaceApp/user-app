@@ -86,13 +86,13 @@ const Profile = () => {
                 <label style={{fontWeight:'200'}}>Gender</label>
                 <input list="gender" type='name'  values={values.Gender}/>
                   <datalist id="gender">
-                    <option value="Male" >Gender</option>
+                    <option value="Male" ></option>
                     <option value="Female"></option>
                   </datalist>
                 </div>
                 <div style={{display:"flex", flexDirection:"column"}}>
                 <label style={{fontWeight:'200'}}>Date of birth</label>
-                <input type="month" placeholder='full name' values={values.DOB}/>
+                <input type="date" placeholder='full name' values={values.DOB}/>
                 </div>
                 <div style={{display:"flex", flexDirection:"column"}}>
                 <label style={{fontWeight:'200'}}>Level of Study </label>
